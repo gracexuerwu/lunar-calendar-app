@@ -1,0 +1,15 @@
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    grid-area: 1/2;
+}
+.hongPao{
+    width: 100%;
+    height: 1200px;
+    position: relative;
+    display: grid;
+}

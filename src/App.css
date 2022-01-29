@@ -1,6 +1,9 @@
 .container {
   background-image: url(./images/CNY_BG.jpg);
-  background-size: "cover";
   height: 100vh;
   background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
