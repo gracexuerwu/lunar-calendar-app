@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/RedPacket.css";
-import hongPao from "../images/HongPao.png";
+import hongPao from "../images/HongPao1.png";
 import tiger from "../images/tiger.png";
 
 export default function RedPacket() {
