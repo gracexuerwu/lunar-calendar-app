@@ -5,9 +5,12 @@ import hongPao from "../images/HongPao.png";
 export default function RedPacket() {
   return (
     <div>
-      <img src={hongPao} className="hongPao" alt="Red packet" />
-      <h1>You are born in the year of the tiger</h1>
+      <div className="box">
+        <img src={hongPao} className="hongPao" alt="Red packet" />
+        <div className="text">
+          <h1>You are born in the year of the Tiger 🐯</h1>
+        </div>
+      </div>
     </div>
-
   );
 }
