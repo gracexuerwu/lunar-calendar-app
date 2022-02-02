@@ -26,7 +26,7 @@ export default function RedPacket() {
     ['狗', { name: 'Dog', image: 狗 }],
     ['猪', { name: 'Pig', image: 猪 }],
     ['猴', { name: 'Monkey', image: 猴 }],
-    ['羊', { name: 'Sheep', image: 羊 }],
+    ['羊', { name: 'Goat', image: 羊 }],
     ['虎', { name: 'Tiger', image: 虎 }],
     ['蛇', { name: 'Snake', image: 蛇 }],
     ['马', { name: 'Horse', image: 马 }],
