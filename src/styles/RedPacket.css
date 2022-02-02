@@ -23,7 +23,7 @@ h1 {
     top: 5%; /* Adjust this value to move the positioned div up and down */
     /* background: rgba(0, 0, 0, 0.8); */
     font-family: Arial,sans-serif;
-    color: black;
+    color: darkred;
     width: 60%; /* Set the width of the positioned div */
 }
 .box .zodiac{
@@ -51,4 +51,9 @@ h1 {
     font-family: Arial,sans-serif;
     color: rgb(255, 255, 255);
     width: 60%; /* Set the width of the positioned div */
+}
+
+.SelectDatePicker{
+  margin: 20px;
+  font-size: 20px;
 }
