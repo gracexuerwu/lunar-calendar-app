@@ -123,12 +123,12 @@ h2 {
   @media (min-width: 1200px) { 
     .hongPao {
         width: 100%;
-        height: 1050px;
+        height: 1350px;
     }
     h1 {
-        font-size: 25px;
+        font-size: 30px;
     }
     h2 {
-        font-size: 30px;
+        font-size: 35px;
     }
   }
