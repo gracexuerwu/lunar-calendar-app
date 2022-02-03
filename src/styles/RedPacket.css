@@ -2,6 +2,17 @@
 h1 {
     text-align: center;
     font-size: 30px;
+    margin-top: 0;
+}
+h2 {
+    margin-top: 9px;
+    margin-bottom: 2px;
+}
+.arrow {
+    height: 200px;
+    position: relative;
+    bottom: 48px;
+
 }
 .hongPao{
     width: 100%;
@@ -56,4 +67,68 @@ h1 {
 .SelectDatePicker{
   margin: 20px;
   font-size: 20px;
+  position: relative;
+  bottom: 140px;
 }
+
+/* media queries */
+@media (min-width: 375px) { 
+    .hongPao {
+        width: 100%;
+        height: 500px;
+    }
+    h1 {
+        font-size: 13px;
+    }
+    h2 {
+        font-size: 13px;
+    }
+  }
+@media (min-width: 595px) { 
+    .hongPao {
+        width: 100%;
+        height: 750px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+  }
+  @media (min-width: 768px) { 
+    .hongPao {
+        width: 100%;
+        height: 900px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+  }
+  @media (min-width: 889px) { 
+    .hongPao {
+        width: 100%;
+        height: 1000px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+  }
+  @media (min-width: 1200px) { 
+    .hongPao {
+        width: 100%;
+        height: 1050px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+  }

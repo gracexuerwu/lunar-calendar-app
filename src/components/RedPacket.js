@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import Lottie from 'lottie-react';
 import SelectDatePicker from '@netojose/react-select-datepicker';
 import solarLunar from 'solarlunar';
 import '../styles/RedPacket.css';
@@ -16,6 +17,7 @@ import 马 from '../images/马.png';
 import 鸡 from '../images/鸡.png';
 import 鼠 from '../images/鼠.png';
 import 龙 from '../images/龙.png';
+import arrow from '../animation/down-arrow.json';
 
 export default function RedPacket() {
   const [birthday, setBirthday] = React.useState(new Date());
@@ -51,9 +53,9 @@ export default function RedPacket() {
     <div className="box">
       <img src={hongPao} className="hongPao" alt="Red packet" />
       <div className="text">
-        <h2>
+        <h1>
           You are born in the year of the
-        </h2>
+        </h1>
         <h1>
           {animalName}
           {' '}
@@ -62,7 +64,8 @@ export default function RedPacket() {
       </div>
       <img src={animalIcon} className="zodiac" alt="Red packet" />
       <div className="calendar">
-        <h2>Check out your birthday in the Chinese Lunar Calendar 👇🏻</h2>
+        <h2>Check out your birthday in the Chinese Lunar Calendar</h2>
+        <Lottie animationData={arrow} className="arrow" />
         <SelectDatePicker className="SelectDatePicker" minDate={new Date(1901, 0, 1)} maxDate={new Date(2100, 11, 31)} showLabels={false} value={birthday} onDateChange={handleChange} />
       </div>
     </div>

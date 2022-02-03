@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@netojose/react-select-datepicker": "^1.0.2",
+    "lottie-react": "^2.2.1",
     "react": "latest",
     "react-dom": "latest",
     "react-scripts": "latest",
