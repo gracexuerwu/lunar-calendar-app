@@ -13,3 +13,9 @@
   background-repeat: no-repeat;
   height: 100vh;
 }
+@media (max-width: 480px) {
+  .background-image {
+    background-image: none;
+    background-color: #fcbe60;
+  }
+}
