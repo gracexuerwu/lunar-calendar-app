@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import Lottie from 'lottie-react';
 import SelectDatePicker from '@netojose/react-select-datepicker';
@@ -17,10 +16,12 @@ import 马 from '../images/马.png';
 import 鸡 from '../images/鸡.png';
 import 鼠 from '../images/鼠.png';
 import 龙 from '../images/龙.png';
+import 拜年 from '../images/拜年.png';
 import arrow from '../animation/down-arrow.json';
 
 export default function RedPacket() {
   const [birthday, setBirthday] = React.useState(new Date());
+  const [lunarBirthday, setLunarBirthday] = React.useState(null);
 
   const map = new Map([
     ['兔', { name: 'Rabbit', image: 兔 }],
@@ -41,28 +42,37 @@ export default function RedPacket() {
     if (value) {
       console.log(value);
       setBirthday(value);
+      setLunarBirthday(solarLunar.solar2lunar(value.getFullYear(), value.getMonth() + 1, value.getDate()));
     }
   };
 
-  const lunarBirthday = solarLunar.solar2lunar(birthday.getFullYear(), birthday.getMonth() + 1, birthday.getDate());
   console.log('lunarBirthday', lunarBirthday);
-  const animalIcon = map.get(lunarBirthday.animal).image;
-  const animalName = map.get(lunarBirthday.animal).name;
 
   return (
     <div className="box">
       <img src={hongPao} className="hongPao" alt="Red packet" />
       <div className="text">
-        <h1>
-          You are born in the year of the
-        </h1>
-        <h1>
-          {animalName}
-          {' '}
-          {lunarBirthday.animal}
-        </h1>
+        {lunarBirthday
+          ? (
+            <>
+              <h1>
+                You are born in the year of the
+              </h1>
+              <h1>
+                {map.get(lunarBirthday.animal).name}
+                {' '}
+                {lunarBirthday.animal}
+              </h1>
+            </>
+          )
+          : (
+            <>
+              <h1>Happy Chinese New Year</h1>
+              <h1>新年快乐</h1>
+            </>
+          )}
       </div>
-      <img src={animalIcon} className="zodiac" alt="Red packet" />
+      <img src={lunarBirthday ? map.get(lunarBirthday.animal).image : 拜年} className="zodiac" alt="Red packet" />
       <div className="calendar">
         <h2>Check out your birthday in the Chinese Lunar Calendar</h2>
         <Lottie animationData={arrow} className="arrow" />
