@@ -70,6 +70,20 @@ h2 {
   bottom: 140px;
 }
 
+div select {
+  color: white;
+  background: red;
+  border-color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+option {
+  background-color: red;
+  color: yellow;
+}
+
 /* media queries */
 @media (min-width: 375px) { 
     .hongPao {
