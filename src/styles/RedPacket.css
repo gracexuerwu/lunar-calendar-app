@@ -79,11 +79,6 @@ div select {
   font-weight: 700;
 }
 
-option {
-  background-color: red;
-  color: yellow;
-}
-
 /* media queries */
 @media (min-width: 375px) { 
     .hongPao {
