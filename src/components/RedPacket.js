@@ -67,14 +67,14 @@ export default function RedPacket() {
           )
           : (
             <>
-              <h1>Happy Chinese New Year</h1>
+              <h1>Happy Chinese New Year! 🎉</h1>
               <h1>新年快乐</h1>
             </>
           )}
       </div>
       <img src={lunarBirthday ? map.get(lunarBirthday.animal).image : 拜年} className="zodiac" alt="Red packet" />
       <div className="calendar">
-        <h2>Check out your birthday in the Chinese Lunar Calendar</h2>
+        <h2>Check out your birthday in the Chinese Lunar Calendar 🎂</h2>
         <Lottie animationData={arrow} className="arrow" />
         <SelectDatePicker className="SelectDatePicker" minDate={new Date(1901, 0, 1)} maxDate={new Date(2100, 11, 31)} showLabels={false} value={birthday} onDateChange={handleChange} />
       </div>
