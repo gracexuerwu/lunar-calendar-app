@@ -83,8 +83,6 @@ div select {
   background: red;
   border-color: white;
   border-radius: 5px;
-  font-size: 20px;
-  font-weight: 700;
 }
 
 /* media queries */
@@ -106,6 +104,10 @@ div select {
     h2 {
         font-size: 17px;
     }
+    div select {
+      font-size: 12px;
+      font-weight: 700;
+    }
   }
 @media (min-width: 595px) { 
     .hongPao {
@@ -118,6 +120,10 @@ div select {
     h2 {
         font-size: 20px;
     }
+    div select {
+      font-size: 15px;
+      font-weight: 700;
+    }
   }
   @media (min-width: 768px) { 
     .hongPao {
@@ -129,6 +135,10 @@ div select {
     }
     h2 {
         font-size: 24px;
+    }
+    div select {
+      font-size: 20px;
+      font-weight: 700;
     }
   }
   @media (min-width: 889px) { 
