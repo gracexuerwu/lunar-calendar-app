@@ -17,7 +17,9 @@ import 鸡 from '../images/鸡.png';
 import 鼠 from '../images/鼠.png';
 import 龙 from '../images/龙.png';
 import 拜年 from '../images/拜年.png';
-import arrow from '../animation/down-arrow.json';
+// import arrow from '../animation/down-arrow.json';
+// import lionDance from '../animation/lionDance-animation.json';
+import confetti from '../animation/confetti.json';
 
 export default function RedPacket() {
   const [birthday, setBirthday] = React.useState(new Date());
@@ -75,7 +77,7 @@ export default function RedPacket() {
       <img src={lunarBirthday ? map.get(lunarBirthday.animal).image : 拜年} className="zodiac" alt="Red packet" />
       <div className="calendar">
         <h2>Check out your birthday in the Chinese Lunar Calendar 🎂</h2>
-        <Lottie animationData={arrow} className="arrow" />
+        <Lottie animationData={confetti} className="arrow" />
         <SelectDatePicker className="SelectDatePicker" minDate={new Date(1901, 0, 1)} maxDate={new Date(2100, 11, 31)} showLabels={false} value={birthday} onDateChange={handleChange} />
       </div>
     </div>
