@@ -234,13 +234,17 @@ div select {
         height: 1200px;
     }
     h1 {
-        font-size: 34px;
+        font-size: 30px;
     }
     h2 {
-        font-size: 38px;
+        font-size: 35px;
     }
     div select {
         font-size: 25px;
         font-weight: 600;
       }
+      .arrow {
+        height: 110px;
+        bottom: 20px;
+    }
   }
